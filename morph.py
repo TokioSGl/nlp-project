@@ -1,8 +1,10 @@
 import pymorphy2
 
+
 def get_nouns(words: list[str]) -> list[str]:
     parser = pymorphy2.MorphAnalyzer()
-    return[word for word in words if parser.parse(word)[0].tag.POS == "NOUN" ]
+    return [word for word in words if parser.parse(word)[0].tag.POS == "NOUN"]
+
 
 def normolize(words: str) -> str:
     parser = pymorphy2.MorphAnalyzer()

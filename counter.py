@@ -1,4 +1,4 @@
-from collections import defaultdict, Counter
+from collections import Counter, defaultdict
 
 
 def count_words(words: list[str]) -> dict[str, int]:
@@ -16,6 +16,7 @@ def count_words__default(words: list[str]) -> dict[str, int]:
     for word in words:
         counter[word] += 1
     return counter
+
 
 def count_words__count(words: list[str]) -> dict[str, int]:
     counter = {}
